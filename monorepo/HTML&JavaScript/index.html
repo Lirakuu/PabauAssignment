@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox</title>
+    <style>
+        #checkboxContainer {
+            display: inline-block;
+            flex-direction: column;
+            font-size: 25px;
+
+        }
+        #selectedValues{
+            font-size: 25px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            text-align: center;
+
+        }
+        .buttons {
+            padding: 10px 10px;
+            margin-bottom: 5px;
+        }
+        form{
+            background-color: springgreen;
+            border-radius: 10px;
+        }
+        #shuffleBtn{
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+        #changeBtn{
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+        #showBtn{
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+<form>
+    <div id="checkboxContainer">
+        <label><input type="checkbox" value="Internship">Internship</label>
+        <label><input type="checkbox" value="Pabau">Pabau</label>
+        <label><input type="checkbox" value="Employment">Employment</label>
+        <label><input type="checkbox" value="Career">Career</label>
+    </div>
+    <br>
+    <div class="buttons">
+    <button id="shuffleBtn" type="button">Shuffle Values</button>
+    <button id="changeBtn" type="button">Change Values</button>
+    <button id="showBtn" type="button">Show selected values</button>
+    </div>
+</form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
